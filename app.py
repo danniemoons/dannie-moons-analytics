@@ -4,8 +4,8 @@ import pandas as pd
 import plotly.express as px
 
 # 1. Configuración de Credenciales
-NOTION_TOKEN = "TU_TOKEN_SECRETO_AQUI"
-DATABASE_ID = "TU_DATABASE_ID_AQUI"
+NOTION_TOKEN = st.secrets["NOTION_TOKEN"]
+DATABASE_ID = st.secrets["DATABASE_ID"]
 
 headers = {
     "Authorization": f"Bearer {NOTION_TOKEN}",
