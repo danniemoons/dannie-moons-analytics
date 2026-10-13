@@ -33,8 +33,8 @@ def fetch_notion_data():
             likes = props.get("Likes", {}).get("number") or 0
             saved = props.get("Saved", {}).get("number") or 0
             
-            # Extraer Fórmula de Engagement
-            formula_data = props.get("Fuego 🔥 (Engagement)", {}).get("formula", {})
+            # Extraer Fórmula de Engagement (Corregido al nombre exacto de tu tabla)
+            formula_data = props.get("Engagement", {}).get("formula", {})
             engagement = formula_data.get("number") or 0
             
             records.append({
